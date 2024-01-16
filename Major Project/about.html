@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+}
+
+html {
+  box-sizing: border-box;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+.column {
+  float: left;
+  width: 33.3%;
+  margin-bottom: 16px;
+  padding: 0 8px;
+}
+
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  margin: 8px;
+}
+
+.about-section {
+  padding: 50px;
+  text-align: center;
+  background-color: #474e5d;
+  color: white;
+}
+
+.container {
+  padding: 0 16px;
+}
+
+.container::after, .row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+.title {
+  color: grey;
+}
+
+.button {
+  border: none;
+  outline: 0;
+  display: inline-block;
+  padding: 8px;
+  color: white;
+  background-color: #000;
+  text-align: center;
+  cursor: pointer;
+  width: 100%;
+}
+
+.button:hover {
+  background-color: #555;
+}
+
+@media screen and (max-width: 650px) {
+  .column {
+    width: 100%;
+    display: block;
+  }
+}
+</style>
+</head>
+<body>
+
+<div class="about-section">
+  <h1>About Us Page</h1>
+  <p>FACE IS LEADING CSR ASSESSMENTS AND M&E FIRM</p>
+  <p>FACS is the best CSR consulting firm in India, having worked with over 150 plus Corporate and covering 200 plus Districts across the country. Our strong team of passionate and practicing professionals with varied background ranging from sociologists, development sector experts, educationists, nutritionist, environmentalists, academicians, project managers, who together strive to provide innovative solutions for people at the bottom of the pyramid with focus on impact and sustainability.</p>
+</div>
+
+<h2 style="text-align:center">Our Team</h2>
+<div class="row">
+  <div class="column">
+    <div class="card">
+      <img src="images/about1.jpeg" alt="Jane" style="width:100%">
+      <div class="container">
+        <h2>Mr. Arun Kumar</h2>
+        <p class="title">CEO & Founder</p>
+        <p>FACS is a one-stop solution for all your CSR requirements. With over 13 years of expertise in the Corporate Social Responsibility domain, we have worked with over 150 firms and have covered over 200 districts nationwide. SoulAce's Technology for Good - CSR Platform has revolutionized the CSR Monitoring and Evaluation space and helped corporates to track all CSR activities on click of a button</p>
+        <p>arunkumar@gmail.com</p>
+        <p><button class="button">Contact</button></p>
+      </div>
+    </div>
+  </div>
+
+  <div class="column">
+    <div class="card">
+      <img src="images/Video1.jpeg" alt="Mike" style="width:100%">
+      <div class="container">
+        <h2>Mike Ross</h2>
+        <p class="title">Art Director</p>
+        <p>An Art Director is in charge of making sure the images used in projects such as magazines, newspapers, and product packaging are stylish and appropriate. They create an overall design while directing others who develop the artwork or layouts.</p>
+        <p>mike@example.com</p>
+        <p><button class="button">Contact</button></p>
+      </div>
+    </div>
+  </div>
+  
+  <div class="column">
+    <div class="card">
+      <img src="images/video2.jpeg" alt="John" style="width:100%">
+      <div class="container">
+        <h2>Kushi</h2>
+        <p class="title">Designer</p>
+        <p>A content designer is tasked with communicating information in the best way possible. An effective content designer is expected to be skilled in language(s), psychology, user experience (UX), graphic design, and the technical requirements of front-end development. A content designer is an expert across various media, and is skilled in drafting compelling text, images, and videos.</p>
+        <p>kushi@gmail.com</p>
+        <p><button class="button">Contact</button></p>
+      </div>
+    </div>
+  </div>
+</div>
+
+</body>
+</html>

@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="style1.css">
+<style>
+.container {
+  position: relative;
+  text-align: center;
+  color: white;
+}
+.top-left {
+  position: absolute;
+  top: 100px;
+  left: 16px;
+  right: 20px;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.container {
+  padding: 64px;
+  background-color: #F0F8FF;
+}
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both
+}
+
+.column-66 {
+  float: left;
+  width: 66.66666%;
+  padding: 20px;
+}
+
+.column-33 {
+  float: left;
+  width: 33.33333%;
+  padding: 20px;
+}
+
+.xlarge-font {
+  font-size: 50px;
+  color: black;
+}
+
+.button {
+  border: none;
+  color: white;
+  padding: 14px 28px;
+  font-size: 16px;
+  cursor: pointer;
+  background-color: #04AA6D;
+}
+
+img {
+  display: block;
+  height: auto;
+  max-width: 100%;
+}
+
+@media screen and (max-width: 1000px) {
+  .column-66,
+  .column-33 {
+    width: 100%;
+    text-align: center;
+  }
+  img {
+    margin: auto;
+  }
+}
+
+
+</style>
+</head>
+<body>
+    
+<div class="container">
+  <img src="images/ideas.jpeg" alt="Snow" style="width:100%;">
+  <div class="top-left"><h1>Our Ideas</h1></div>
+</div>
+
+
+<div class="container">
+  <div class="row">
+    <div class="column-66">
+      <h5 class="xlarge-font"><b>Know the Nuance: Corporate Governance vs. Corporate Social Responsibility</b></h5>
+      <p>Corporate Governance and Corporate Social Responsibility are far more than similar sounding jargon. They impact not only the organization itself, but also the wider community that exists around it.</p>
+      <a href=""><button class="button">Know More</button></a>
+    </div>
+    <div class="column-33">
+        <img src="images/idea1.jpeg" width="500" height="500">
+    </div>
+  </div>
+</div>
+
+<!-- The Company -->
+<div class="container" style="background-color:#f1f1f1">
+  <div class="row">
+    <div class="column-33">
+      <img src="images/idea2.jpeg" alt="App" width="500" height="500">
+    </div>
+    <div class="column-66">
+      <h5 class="xlarge-font"><b>Understanding Corporate Social Responsibility vs. Sustainability</b></h5>
+      <p>Corporate Social Responsibility and sustainability are two integral concepts in the corporate world. They are often intertwined, yet with distinct purposes and focuses. CSR and sustainability both play a key role in shaping ethical business practices.
+
+      </p>
+      <a href=""><button class="button">Know More</button></a>
+    </div>
+  </div>
+</div>
+
+<!-- The Individual -->
+<div class="container">
+  <div class="row">
+    <div class="column-66">
+      <h5 class="xlarge-font"><b>Understanding Corporate Social Responsibility vs. Sustainability</b></h5>
+      <p>Corporate Social Responsibility and sustainability are two integral concepts in the corporate world. They are often intertwined, yet with distinct purposes and focuses. CSR and sustainability both play a key role in shaping ethical business practices.
+
+      </p>
+      <a href=""><button class="button">Know More</button></a>
+    </div>
+    <div class="column-33">
+        <img src="images/stackholder.jpg" width="500" height="500" >
+    </div>
+  </div>
+</div>
+
+</body>
+</html> 
